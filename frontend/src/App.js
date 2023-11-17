@@ -1,5 +1,5 @@
-import AccountCreationTab from "./AccountCreationTab";
-import UserDetailsTab from "./UserDetailsTab";
+import AccountCreationTab from "./components/AccountCreationTab";
+import UserDetailsTab from "./components/UserDetailsTab";
 
 function App() {
   return (
