@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import axios from 'axios';
+import { UserContext } from '../context/UserContext';
 
 const AccountCreationTab = () => {
+  const auth=useContext(UserContext);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [phone, setPhone] = useState('');
@@ -18,9 +20,12 @@ const AccountCreationTab = () => {
       setPassword('');
       setPhone('');
       setEmail('');
+      auth.login();
     } catch (error) {
       console.error('Error creating account:', error);
     }
+
+    
   };
 
   return (

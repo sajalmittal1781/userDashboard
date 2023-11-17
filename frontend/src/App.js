@@ -1,11 +1,11 @@
-import AccountCreationTab from "./components/AccountCreationTab";
-import UserDetailsTab from "./components/UserDetailsTab";
+import React from 'react'
+import Display from './Display'
 
-function App() {
+
+const App = () => {
   return (
-    <UserDetailsTab/>
-    // <AccountCreationTab/>
-  );
+   <Display/>
+  )
 }
 
-export default App;
+export default App
