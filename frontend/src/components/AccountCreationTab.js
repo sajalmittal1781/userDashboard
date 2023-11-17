@@ -14,6 +14,7 @@ const AccountCreationTab = () => {
     e.preventDefault();
 
     try {
+      // await axios.post('http://localhost:5000/api/users', { username, password ,email,phone });
       await axios.post('http://localhost:5000/api/users', { username, password ,email,phone });
       console.log('Account created successfully');
       setUsername('');
